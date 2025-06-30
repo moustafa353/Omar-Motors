@@ -3,44 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+ 
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="top-section">
-                <span class="logo">X O</span>
-                <div class="mode-buttons">
-                    <button id="playVsCPU" class="active">Player 1 vs CPU</button>
-                    <button id="playVsFriend">Player 1 vs Player 2</button>
-                </div>
-                <button id="resetGame" onclick="resetGame()">🔄</button>
-             
+
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">Motors</a>
+            <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">cars</a>
+
+</nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+</section>
+</header>
+
+<section class="home" id="home">
+    <div class="row">
+       <div class="content">
+            <h3>Omar <span>Motors</span></h3>
             </div>
-        </header>
-
-        <div id="turn-indicator">X TURN</div>
-
-        <div class="board">
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-        </div>
-
-        <div class="scoreboard">
-            <div class="score x-score">X (YOU) <span>0</span></div>
-            <div class="score ties">TIES <span>0</span></div>
-            <div class="score o-score" id="modeToggle">O (CPU) <span>0</span></div>
+        <div class="image">
+            <img src="Screenshot-removebg-preview.png"  alt="">
         </div>
     </div>
- 
-    <script src="script1.js"></script>
+    
+<section class="about" id="about">
+    <div class="row">
+        <div class="img">
+<img src="contact_us-removebg-preview.png" alt="">
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>because we have very special cars</p>
+    
+        </div>
+    </div>
+</section>
+</section>
+
+
+<section class="video" id="video">
+    <div>
+<video src="WhatsApp Video 2025-06-30 at 4.15.31 PM.mp4"  autoplay loop muted></video>
+    </div>
+</section>
+
+<section class="courses" id="courses">
+    <h1 class="heading">  our <span>cars</span> </h1>
+    <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide"> 
+                <img src="WhatsApp Image 2025-06-30 at 4.15.28 PM (1).jpeg" alt="">
+                <h3>kia cerrato</h3>
+                <p>80000K/M<br>2022</p>
+           
+            </div>
+
+            <div class="swiper-slide slide"> 
+                <img src="car.jpeg" alt="">
+                <h3>MG ZS</h3>
+                <p>ZERO <br>2025</p>
+           
+            </div>
+            <div class="swiper-slide slide"> 
+                <img src="WhatsApp Image 2025-06-30 at 4.15.28 PM (3).jpeg" alt="">
+                <h3>MERCEDS Mb4</h3>
+                <p>2020 </p>
+           
+            </div>
+            <div class="swiper-slide slide"> 
+                <img src="BMW.jpeg" alt="">
+                <h3>BMW X3</h3>
+                <p>2015</p>
+           
+            </div>
+
+            <div class="swiper-slide slide"> 
+                <img src="car-2.jpeg" alt="">
+                <h3>JETOUR X90+</h3>
+<P>2025<br>30000K/M</P>
+            </div>
+
+            <div class="swiper-slide slide"> 
+                <img src="WhatsApp Image 2025-06-30 at 4.15.30 PM.jpeg" alt="">
+                <h3>SKODA KODIAQ</h3>
+                <p>2020<br>30000K/M</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
 </body>
+<script src="script.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 </html>
